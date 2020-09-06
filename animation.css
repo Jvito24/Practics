@@ -1,0 +1,54 @@
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 5px;
+    border-radius: 15%;
+    margin-left: 10px;
+}
+button:hover{
+    animation-name: colorbutton;
+    animation-duration: 30ms;
+    animation-fill-mode: forwards;
+}
+@keyframes colorbutton {
+    100%{
+        background-color: #f00;
+    }
+}
+#cube {
+    background-color: #0f0;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+#right {
+    background-color: #0f0;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    left: 60px;
+    transform: skewY(100%)
+}
+@keyframes arrow {
+    0%{
+        top: 40px;
+        left: 50px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+h2{
+    animation-name: rb;
+    animation-duration: 4s;
+}
+@keyframes rb{
+    0%{
+        color: #000;
+    }
+    100%{
+        color: #f00;
+    }
+}
