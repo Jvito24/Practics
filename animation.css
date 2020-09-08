@@ -1,3 +1,7 @@
+p{
+    position: relative;
+    left: -350px;
+}
 button {
     float: left;
     background-color: #000000;
@@ -19,7 +23,7 @@ button:hover{
         background-color: #f00;
     }
 }
-#top{
+.arrow{
     height: 0px;
     width: 0px;
     border-right: 100px solid rgb(255, 60, 0);
@@ -28,8 +32,6 @@ button:hover{
     border-bottom: 100px solid transparent;
     position: relative;
     top: -75px;
-}
-.arrow{
     float: left;
     animation-name: arrow;
     animation-duration: 1s;
@@ -61,5 +63,39 @@ h2{
     }
     100%{
         color: #f00;
+    }
+}
+#circle{
+    float: right;
+    background-color: #00f5f5;
+    height: 35px;
+    width: 35px;
+    position: relative;
+    right: 50px;
+    border-radius: 50%;
+    animation-name: bouling;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 7;
+}
+@keyframes bouling {
+    0%{
+        top: 0px;
+        right: 50px;
+    }
+    25%{
+        top: 100px;
+        right: 50px
+    }
+    50%{
+        right: 150px;
+        top: 100px;
+    }
+    75%{
+        top: 0px;
+        right: 150px;
+    }
+    100%{
+        right: 50px;
     }
 }
