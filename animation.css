@@ -1,48 +1,59 @@
 button {
+    float: left;
     background-color: #000000;
     color: #ffffff;
     padding: 10px 5px;
     border-radius: 15%;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 button:hover{
     animation-name: colorbutton;
-    animation-duration: 30ms;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 @keyframes colorbutton {
+    0%{
+        background-color: #f00
+    }
     100%{
         background-color: #f00;
     }
 }
-#cube {
-    background-color: #0f0;
-    height: 50px;
-    width: 50px;
+#top{
+    height: 0px;
+    width: 0px;
+    border-right: 100px solid rgb(255, 60, 0);
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid transparent;
     position: relative;
-    top: 40px;
-    left: 50px;
+    top: -75px;
 }
-#right {
-    background-color: #0f0;
-    height: 50px;
-    width: 50px;
-    position: relative;
-    left: 60px;
-    transform: skewY(100%)
+.arrow{
+    float: left;
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 @keyframes arrow {
     0%{
-        top: 40px;
-        left: 50px;
+        left: -70px;
+        transform: scale(0.3);
+    }
+    50%{
+        left: 10px;
+        transform: scale(0.1);
     }
     100%{
-        top: 100px;
+        left: -70px;
+        transform: scale(0.3);
     }
 }
 h2{
     animation-name: rb;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 @keyframes rb{
     0%{
